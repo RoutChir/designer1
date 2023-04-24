@@ -1,6 +1,6 @@
 namespace: testFlows
 operation:
-  name: myEmptyFlow
+  name: firsttestflow
   sequential_action:
     gav: 'com.microfocus.seq:testFlows.notepadAct:1.0.0'
     skills:
