@@ -1,6 +1,6 @@
 namespace: Folder1
 flow:
-  name: flow5
+  name: Flow5
   workflow:
     - Flow1:
         do:
