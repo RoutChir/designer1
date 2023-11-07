@@ -5,7 +5,7 @@ flow:
     - Notify:
         do_external:
           29baf272-4192-4862-9436-2c6f601b42a9:
-            - notifyData: hello
+            - notifyData: good
             - notifyMethod: message
         navigate:
           - success: SUCCESS
