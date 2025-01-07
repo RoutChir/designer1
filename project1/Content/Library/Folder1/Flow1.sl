@@ -35,8 +35,8 @@ extensions:
   graph:
     steps:
       python_script:
-        x: 680
-        'y': 240
+        x: 160
+        'y': 120
         navigate:
           c77fc23a-55f2-c8c4-540d-e21b31f79053:
             targetId: 11e9749e-0734-aa12-62f8-3d3320fbb109
