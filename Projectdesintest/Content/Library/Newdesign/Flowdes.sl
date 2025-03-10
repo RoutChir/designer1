@@ -7,6 +7,7 @@ flow:
           Newdesign.Newdesign:
             - num1: '0'
             - num2: '300'
+            - name_file: '500'
         navigate:
           - SUCCESS: SUCCESS
   results:
