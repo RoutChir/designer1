@@ -1,26 +1,23 @@
 namespace: Newdesign
-flow:
+operation:
   name: Newdesign
-  workflow:
-    - Nesedisign:
-        do:
-          Newdesign.Nesedisign: []
-        navigate:
-          - SUCCESS: SUCCESS
+  inputs:
+    - num1
+    - num2
+  python_action:
+    use_jython: false
+    script: |-
+      # do not remove the execute function
+      def execute(num1,num2):
+          # code goes here
+      # you can add additional helper methods below.
+      num1 = float(input("Enter first number: "))
+      num2 = float(input("Enter second number: "))
+
+      # Calculate the sum
+      result = num1 + num2
+
+      # Display the result
+      print(f"The sum of {num1} and {num2} is {result}")
   results:
     - SUCCESS
-extensions:
-  graph:
-    steps:
-      Nesedisign:
-        x: 400
-        'y': 160
-        navigate:
-          95d53b6d-3a01-53ef-b314-35ee4d4e9c0a:
-            targetId: 1e323d9a-6c0f-276a-a344-ab81cc706d4b
-            port: SUCCESS
-    results:
-      SUCCESS:
-        1e323d9a-6c0f-276a-a344-ab81cc706d4b:
-          x: 800
-          'y': 200
