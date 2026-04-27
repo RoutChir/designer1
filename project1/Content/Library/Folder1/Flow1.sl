@@ -41,26 +41,26 @@ extensions:
   graph:
     steps:
       python_script:
-        x: 240
+        x: 320
         'y': 40
         navigate:
           c77fc23a-55f2-c8c4-540d-e21b31f79053:
             targetId: 11e9749e-0734-aa12-62f8-3d3320fbb109
             port: FAILURE
       Flow2:
-        x: 480
-        'y': 160
+        x: 400
+        'y': 280
         navigate:
-          54f2cfb7-4a06-e0fe-cb5e-0fd27d8c5b80:
-            targetId: 11e9749e-0734-aa12-62f8-3d3320fbb109
-            port: FAILURE
-          2efa928b-a089-c158-566a-4983ea431829:
+          212ffd9e-4b0c-2816-3853-93f81bb80289:
             targetId: f459598c-3241-ae12-ef98-792c5144bca8
             port: SUCCESS
+          828aaa26-3ac3-809f-f83d-c3713ab0e0cb:
+            targetId: 11e9749e-0734-aa12-62f8-3d3320fbb109
+            port: FAILURE
     results:
       SUCCESS:
         f459598c-3241-ae12-ef98-792c5144bca8:
-          x: 880
+          x: 560
           'y': 120
       FAILURE_1:
         11e9749e-0734-aa12-62f8-3d3320fbb109:
