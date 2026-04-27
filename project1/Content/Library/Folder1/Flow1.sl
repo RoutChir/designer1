@@ -21,8 +21,14 @@ flow:
           io.cloudslang.base.python.python_script:
             - input_0: hello
         navigate:
-          - SUCCESS: SUCCESS
+          - SUCCESS: Flow2
           - FAILURE: FAILURE_1
+    - Flow2:
+        do:
+          Folder1.Flow2: []
+        navigate:
+          - FAILURE: FAILURE_1
+          - SUCCESS: SUCCESS
   outputs:
     - flow_output_0: out
     - flow_output_1:
@@ -35,21 +41,28 @@ extensions:
   graph:
     steps:
       python_script:
-        x: 400
-        'y': 0
+        x: 320
+        'y': 40
         navigate:
           c77fc23a-55f2-c8c4-540d-e21b31f79053:
             targetId: 11e9749e-0734-aa12-62f8-3d3320fbb109
             port: FAILURE
-          2a2f0d83-a8bd-bf2b-4e98-64eb0679939c:
+      Flow2:
+        x: 400
+        'y': 280
+        navigate:
+          212ffd9e-4b0c-2816-3853-93f81bb80289:
             targetId: f459598c-3241-ae12-ef98-792c5144bca8
             port: SUCCESS
+          828aaa26-3ac3-809f-f83d-c3713ab0e0cb:
+            targetId: 11e9749e-0734-aa12-62f8-3d3320fbb109
+            port: FAILURE
     results:
       SUCCESS:
         f459598c-3241-ae12-ef98-792c5144bca8:
-          x: 1040
-          'y': 240
+          x: 560
+          'y': 120
       FAILURE_1:
         11e9749e-0734-aa12-62f8-3d3320fbb109:
-          x: 720
-          'y': 640
+          x: 200
+          'y': 240
