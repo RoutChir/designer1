@@ -1,3 +1,3 @@
 namespace: ''
 properties:
-  - Pf: '50000'
+  - Pf: '55000'
