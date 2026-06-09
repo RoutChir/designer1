@@ -1,5 +1,5 @@
 namespace: ''
 properties:
   - Pf:
-      value: '60000'
+      value: '700000'
       sensitive: true
