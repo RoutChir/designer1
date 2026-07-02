@@ -1,3 +1,3 @@
 namespace: ''
 properties:
-  - SysProp1: helllo
+  - SysProp1: '12345'
